@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002c50; /* 1% = 0.16px || 1px = 6.25% */
+}
+div.main
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inputbox
+{
+    font-size: 17px;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+}
+#inputbox:focus
+{
+    outline: none;
+}
+#inputbox:hover
+{
+    cursor: default;
+}
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.columnButtons
+{
+    padding: 1px 0;
+}
+button
+{
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 140px;
+    background-color: #00579f;
+    color: #dddddd;
+    transition: 0.15s all;
+}
+button:hover
+{
+    cursor: pointer;
+    color: #00579f;
+    background-color: #dddddd;
+}
+button#zero
+{
+    width: 140px;
+}
+button#del
+{
+    background-color: #da5454;
+}
+button#del:hover
+{
+    color: #da5454;
+    background-color: #fff;
+}
+button#equals
+{
+    position: absolute;
+    margin-left: 5px;
+    height: 140px;
+    background-color: #007ce1;
+}
+button#equals:hover
+{
+    color: #007ce1;
+    background-color:#fff;
+}
+button#clear
+{
+    background-color: #00a9a9;
+}
+button#clear:hover
+{
+    color: #00a9a9;
+    background-color:#fff;
+}
+#creator
+{
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    right: 5px;
+}
